@@ -134,7 +134,7 @@ print("Подключение найдено!")
 **Пример:**
 
 ```lua
-while keyDown(KEY_SHIFT) == 0 do -- ожидание нажатие клавишы
+while keyDown(KEY_LSHIFT) == 0 do -- ожидание нажатие клавишы
     wait(300)
 end
 print("Клавиша Shift нажата.")
