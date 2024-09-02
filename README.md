@@ -1,5 +1,5 @@
 
-# Lua API Documentation
+# 
 
 ## Функции
 
@@ -94,6 +94,149 @@ while not isconnected() do
 end
 print("Подключение найдено!")
 ```
+
+---
+
+### `keyDown(key)`
+
+Проверяет нажата ли клавиша `key` или нет.
+
+**Пример:**
+
+```lua
+while keyDown(KEY_SHIFT) == 0 do -- ожидание нажатие клавишы
+    wait(300)
+end
+print("Клавиша Enter нажата.")
+```
+
+**Все названия клавиш:**
+
+| Клавиша           | Название               |
+|-------------------|-------------------------|
+| KEY_LEFTMOUSE     | Левая кнопка мыши       |
+| KEY_RIGHTMOUSE    | Правая кнопка мыши      |
+| KEY_CANCEL        | Отмена                  |
+| KEY_MIDDLEMOUSE   | Средняя кнопка мыши     |
+| KEY_BACKSPACE     | Backspace (Удаление)    |
+| KEY_TAB           | Tab (Вкладка)           |
+| KEY_ENTER         | Enter (Ввод)            |
+| KEY_SHIFT         | Shift (Shift)           |
+| KEY_CTRL          | Ctrl (Контроль)         |
+| KEY_ALT           | Alt (Альт)              |
+| KEY_PAUSEBREAK    | Пауза/Прерывание        |
+| KEY_CAPSLOCK      | Caps Lock (Блокировка регистров) |
+| KEY_ON            | Включение               |
+| KEY_OFF           | Выключение              |
+| KEY_ESC           | Escape (Эскейп)         |
+| KEY_CONVERT       | Конвертировать          |
+| KEY_NONCONVERT    | Не конвертировать       |
+| KEY_ACCEPT        | Принять                 |
+| KEY_MODECHANGE    | Смена режима            |
+| KEY_SPACE         | Пробел                  |
+| KEY_PAGEUP        | Page Up (Страница вверх)|
+| KEY_PAGEDOWN      | Page Down (Страница вниз) |
+| KEY_END           | End (Конец)             |
+| KEY_HOME          | Home (Домой)            |
+| KEY_LEFT          | Влево                   |
+| KEY_UP            | Вверх                   |
+| KEY_RIGHT         | Вправо                  |
+| KEY_DOWN          | Вниз                    |
+| KEY_SELECT        | Выбор                   |
+| KEY_PRINT         | Печать                  |
+| KEY_EXECUTE       | Выполнить               |
+| KEY_PRINTSCR      | Print Screen (Скриншот) |
+| KEY_INSERT        | Insert (Вставить)       |
+| KEY_DELETE        | Delete (Удалить)        |
+| KEY_HELP          | Help (Помощь)           |
+| KEY_ZERO          | 0                       |
+| KEY_ONE           | 1                       |
+| KEY_TWO           | 2                       |
+| KEY_THREE         | 3                       |
+| KEY_FOUR          | 4                       |
+| KEY_FIVE          | 5                       |
+| KEY_SIX           | 6                       |
+| KEY_SEVEN         | 7                       |
+| KEY_EIGHT         | 8                       |
+| KEY_NINE          | 9                       |
+| KEY_A             | A                       |
+| KEY_B             | B                       |
+| KEY_C             | C                       |
+| KEY_D             | D                       |
+| KEY_E             | E                       |
+| KEY_F             | F                       |
+| KEY_G             | G                       |
+| KEY_H             | H                       |
+| KEY_I             | I                       |
+| KEY_J             | J                       |
+| KEY_K             | K                       |
+| KEY_L             | L                       |
+| KEY_M             | M                       |
+| KEY_N             | N                       |
+| KEY_O             | O                       |
+| KEY_P             | P                       |
+| KEY_Q             | Q                       |
+| KEY_R             | R                       |
+| KEY_S             | S                       |
+| KEY_T             | T                       |
+| KEY_U             | U                       |
+| KEY_V             | V                       |
+| KEY_W             | W                       |
+| KEY_X             | X                       |
+| KEY_Y             | Y                       |
+| KEY_Z             | Z                       |
+| KEY_LWIN          | Левый Win              |
+| KEY_RWIN          | Правый Win             |
+| KEY_APPS          | Приложения              |
+| KEY_SLEEP         | Сон                     |
+| KEY_NP0           | NumPad 0                |
+| KEY_NP1           | NumPad 1                |
+| KEY_NP2           | NumPad 2                |
+| KEY_NP3           | NumPad 3                |
+| KEY_NP4           | NumPad 4                |
+| KEY_NP5           | NumPad 5                |
+| KEY_NP6           | NumPad 6                |
+| KEY_NP7           | NumPad 7                |
+| KEY_NP8           | NumPad 8                |
+| KEY_NP9           | NumPad 9                |
+| KEY_MULTIPLY      | Умножение               |
+| KEY_ADD           | Сложение                |
+| KEY_SEP           | Разделитель             |
+| KEY_SUBSTRACT     | Вычитание               |
+| KEY_DEC           | Десятичный              |
+| KEY_DIVIDE        | Деление                 |
+| KEY_F1            | F1                      |
+| KEY_F2            | F2                      |
+| KEY_F3            | F3                      |
+| KEY_F4            | F4                      |
+| KEY_F5            | F5                      |
+| KEY_F6            | F6                      |
+| KEY_F7            | F7                      |
+| KEY_F8            | F8                      |
+| KEY_F9            | F9                      |
+| KEY_F10           | F10                     |
+| KEY_F11           | F11                     |
+| KEY_F12           | F12                     |
+| KEY_F13           | F13                     |
+| KEY_F14           | F14                     |
+| KEY_F15           | F15                     |
+| KEY_F16           | F16                     |
+| KEY_F17           | F17                     |
+| KEY_F18           | F18                     |
+| KEY_F19           | F19                     |
+| KEY_F20           | F20                     |
+| KEY_F21           | F21                     |
+| KEY_F22           | F22                     |
+| KEY_F23           | F23                     |
+| KEY_F24           | F24                     |
+| KEY_NUMLOCK       | Num Lock                |
+| KEY_SCROLLLOCK    | Scroll Lock             |
+| KEY_LSHIFT        | Левый Shift             |
+| KEY_RSHIFT        | Правый Shift            |
+| KEY_LCTRL         | Левый Ctrl              |
+| KEY_RCTRL         | Правый Ctrl             |
+| KEY_LMENU         | Левый Alt               |
+| KEY_RMENU         | Правый Alt              |
 
 ---
 
