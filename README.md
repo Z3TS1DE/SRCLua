@@ -432,7 +432,7 @@ local engine = GetModule("engine.dll")
 
 local offset = 0x51FAD0
 
-memorywrite(engine + offset, "string", 260)
+memorywrite(engine + offset, "string", "this is a test value", 260)
 ```
 
 ---
