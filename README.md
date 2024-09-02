@@ -1,3 +1,5 @@
+![logo](assets/logo.png)
+
 # SRCLua
 by coolmen & cometype.
 
