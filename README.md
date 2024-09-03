@@ -100,7 +100,7 @@ print("Прошло 1 сек!")
 **Пример:**
 
 ```lua
-local ip = "127.0.0.1"
+local ip = "127.0.0.1:27015"
 cmd("connect " .. ip)
 while not isactive() do
     wait(300)
@@ -117,7 +117,7 @@ print("Вы полностью подключились к серверу!")
 **Пример:**
 
 ```lua
-local ip = "127.0.0.1"
+local ip = "127.0.0.1:27015"
 cmd("connect " .. ip)
 while not isconnected() do
     wait(300)
